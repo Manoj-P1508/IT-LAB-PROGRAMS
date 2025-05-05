@@ -58,8 +58,9 @@ Have improvements or extra programs to share? Feel free to fork the repo and sub
 ## 📧 Contact
 
 For questions or suggestions, contact:  
-**Your Name / Maintainer**  
-Email: your.email@example.com
+**Assit Prof.Manoj P / Maintainer**  
+Email: 15manojp08@gmail.com
+Mobile No: 9663000319
 
 ---
 
