@@ -48,11 +48,6 @@ You may need the following to run the programs:
 
 ---
 
-## 📷 Sample Screenshot (Optional)
-
-*(Add images here showing your output or folder structure)*
-
----
 
 ## 📝 Contributing
 
