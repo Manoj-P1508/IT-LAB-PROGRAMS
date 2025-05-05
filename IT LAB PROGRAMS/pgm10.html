@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <script>
+    function validateForm() 
+    {
+         
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var phone = document.getElementById("phone").value;
+
+            // Name validation
+            if (name == "")
+            {
+                alert("Please enter your name.");
+                return false;
+            }
+
+            // Email validation
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern))
+            {
+                alert("Please enter a valid email.");
+                return false;
+            }
+
+            // Password validation
+            if (password.length < 6)
+            {
+                alert("Password must be at least 6 characters.");
+                return false;
+            }
+
+            // Confirm password
+            if (password !== confirmPassword) 
+            {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            // Phone validation
+            var phonePattern = /^[0-9]{10}$/;
+            if (!phone.match(phonePattern)) 
+            {
+                alert("Phone number must be 10 digits.");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+  <form onsubmit="return validateForm()">
+
+    Name: <br>
+    <input type="text" id="name"><br><br>
+
+    Email: <br>
+    <input type="text" id="email"><br><br>
+
+    Password: <br>
+    <input type="password" id="password"><br><br>
+
+    Confirm Password: <br>
+    <input type="password" id="confirmPassword"><br><br>
+
+    Phone Number: <br>
+    <input type="text" id="phone"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>

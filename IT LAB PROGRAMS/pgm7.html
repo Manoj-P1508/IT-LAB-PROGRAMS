@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    
+    <style>
+                    body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: lightgray;
+                margin: 0;
+                padding: 20px;
+            }
+
+            h1, h2 {
+                color: black;
+                margin-bottom: 10px;
+            }
+
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                background-color: white;
+                box-shadow: 0 0 10px gray;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            th, td {
+                border: 1px solid lightgray;
+                padding: 12px;
+                text-align: center;
+            }
+
+            th {
+                background-color: blue;
+                color: white;
+                font-size: 16px;
+            }
+
+            tr:nth-child(even) {
+                background-color: whitesmoke;
+            }
+
+            tr:hover {
+                background-color: lightgray;
+            }
+
+            /* Styling for break and lunch */
+            td[rowspan] {
+                background-color: gold;
+                font-weight: bold;
+            }
+
+            td[colspan] {
+                background-color: red;
+                font-weight: bold;
+                color: white;
+            }
+
+      </style>
+</head>
+<body>
+    <center>
+        <h1>Mewa Vanguard Business School</h1>
+        <h2>Dept of Computer Applications</h2>
+        <h2>Time Table </h2> 
+        <h5>IV SEM 2024-25</h5>
+    </center>
+
+    <table>
+        <tr>
+            <th>Day/Time</th>
+            <th>09.10AM - 10.00AM</th>
+            <th>10.00AM - 10.50AM</th>
+            <th>10.50AM - 11.20AM</th>
+            <th>11.20AM - 12.10PM</th>
+            <th>12.10PM - 01.00PM</th>
+            <th>01.00PM - 1.50PM</th>
+        </tr>
+        <tr>
+            <td>Mon</td>
+            <td>DAA</td>
+            <td>SE</td>
+            <td rowspan="5">Break</td>
+            <td>IT</td>
+            <td>ENG</td>
+            <td rowspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td>LANG</td>
+            <td>IT</td>
+            <td colspan="2">DAA LAB</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td colspan="2">IT LAB</td>
+            <td>IT</td>
+            <td>DA</td>
+        </tr>
+        <tr>
+            <td>Thur</td>
+            <td>SE</td>
+            <td>LANG</td>
+            <td>DAA</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>Fri</td>
+            <td>DAA</td>
+            <td>IT</td>
+            <td>SE</td>
+            <td>ENG</td>
+        </tr>
+        <tr>
+            <td>Sat</td>
+            <td colspan="6" class="no-class">No Class</td>
+          </tr>
+    </table>
+
+</body>
+</html>
